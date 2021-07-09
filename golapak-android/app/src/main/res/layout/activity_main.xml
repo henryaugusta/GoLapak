@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <ImageView
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:src="@drawable/bg_splash"
+        android:scaleType="center"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/container_version"
+        android:layout_marginTop="50dp"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GoLapak"
+            android:textAlignment="center"
+            android:textSize="48sp"
+            android:textColor="@color/color_blue_golapak"
+            android:fontFamily="@font/montserrat_bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jaldi_regular"
+            android:textAlignment="center"
+            android:text="Sewa Lapak Usaha Instant\nv.1.0"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_marginTop="60dp"
+        android:layout_below="@id/container_version"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:src="@drawable/img_people_idea"
+        android:layout_height="500dp"/>
+
+</RelativeLayout>

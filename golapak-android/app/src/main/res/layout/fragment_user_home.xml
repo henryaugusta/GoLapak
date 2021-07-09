@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_blurry"
+    tools:context=".ui.home.UserHomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp">
+
+
+                <TextView
+                    android:id="@+id/label_greet_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@id/img_man_sitting"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="Hallo Henry Ganteng..."
+                    android:textColor="@color/home_secondary" />
+
+                <TextView
+                    android:id="@+id/label_motto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/label_greet_name"
+                    android:layout_toStartOf="@id/img_man_sitting"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Yuk \nCari\nLapak\nDagang\n Idaman"
+                    android:textColor="@color/home_secondary"
+                    android:textSize="24dp" />
+
+
+                <ImageView
+                    android:id="@+id/img_man_sitting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="-20dp"
+                    android:src="@drawable/ic_man_sitting" />
+
+
+                <RelativeLayout
+                    android:id="@+id/container_menu_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/label_motto"
+                    android:layout_marginTop="20dp"
+                    android:layout_toStartOf="@id/img_man_sitting"
+                    android:background="@drawable/rounded_rect"
+                    android:backgroundTint="@color/blue_menu"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_menu1"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_folder_blue" />
+
+                    <TextView
+                        android:id="@+id/desc_menu_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_menu1"
+                        android:fontFamily="@font/gilroy_light"
+                        android:text="Lorem Ipsum"
+                        android:textColor="@color/menu1_color"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/desc_menu_1"
+                        android:fontFamily="@font/gilroy_bold"
+                        android:text="Lorem Ipsum"
+                        android:textColor="@color/menu1_color" />
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/container_menu_1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:id="@+id/container_menu_2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rounded_rect"
+                            android:backgroundTint="@color/blue_menu"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/img_menu2"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginTop="10dp"
+                                android:padding="10dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/ic_folder_blue" />
+
+                            <TextView
+                                android:id="@+id/desc_menu_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/img_menu2"
+                                android:fontFamily="@font/gilroy_light"
+                                android:text="Lorem Ipsum"
+                                android:textColor="@color/menu1_color"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/desc_menu_2"
+                                android:fontFamily="@font/gilroy_bold"
+                                android:text="Lorem Ipsum"
+                                android:textColor="@color/menu1_color" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/container_menu_3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rounded_rect"
+                            android:backgroundTint="@color/yellow_menu"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/img_menu3"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginTop="10dp"
+                                android:padding="10dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/ic_folder_yellow" />
+
+                            <TextView
+                                android:id="@+id/desc_menu_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/img_menu3"
+                                android:fontFamily="@font/gilroy_light"
+                                android:text="Lorem Ipsum"
+                                android:textColor="@color/menu_yellow"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/desc_menu_3"
+                                android:fontFamily="@font/gilroy_bold"
+                                android:text="Lorem Ipsum"
+                                android:textColor="@color/menu_yellow" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:id="@+id/container_menu_5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rounded_rect"
+                            android:backgroundTint="@color/light_cyan"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/img_menu5"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginTop="10dp"
+                                android:padding="10dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/ic_folder_cyan" />
+
+                            <TextView
+                                android:id="@+id/desc_menu_5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/img_menu5"
+                                android:fontFamily="@font/gilroy_light"
+                                android:text="Lorem Ipsum"
+                                android:textColor="@color/menu_cyan"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/desc_menu_5"
+                                android:fontFamily="@font/gilroy_bold"
+                                android:text="Lorem Ipsum"
+                                android:textColor="@color/menu_cyan" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/container_menu_4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rounded_rect"
+                            android:backgroundTint="@color/blue_menu"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/img_menu4"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginTop="10dp"
+                                android:padding="10dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/ic_folder_blue" />
+
+                            <TextView
+                                android:id="@+id/desc_menu_4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/img_menu4"
+                                android:fontFamily="@font/gilroy_light"
+                                android:text="Lorem Ipsum"
+                                android:textColor="@color/menu_cyan"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/desc_menu_4"
+                                android:fontFamily="@font/gilroy_bold"
+                                android:text="Lorem Ipsum"
+                                android:textColor="@color/menu_cyan" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="20dp"
+                        android:text="Info GoLapak"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/color_blue_golapak"
+                        android:textSize="20sp" />
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <include layout="@layout/item_news" />
+
+                            <include layout="@layout/item_news" />
+
+                            <include layout="@layout/item_news" />
+
+                            <include layout="@layout/item_news" />
+
+                            <include layout="@layout/item_news" />
+
+                            <include layout="@layout/item_news" />
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/dummy_home_temporary">
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
